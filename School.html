@@ -1,100 +1,86 @@
 <!DOCTYPE html>
+<html>
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>School Website</title>
     <style>
         body {
-            font-family: Agerial, TimeNew Roman;
+            font-family: Arial, 'Times New Roman';
             margin: 0;
             padding: 0;
         }
-        
         header {
-            background-color:brown;
+            background-color: brown;
             color: white;
             padding: 0px;
             text-align: right;
         }
-        
         .logo {
             float: left;
-            margin-right:0px;
+            margin-right: 0px;
         }
-        
         .logo img {
             width: 50px;
             height: 50px;
         }
-        
         nav {
             float: right;
         }
-        
         nav ul {
             list-style: none;
             margin: 0;
-            padding: 10;
+            padding: 10px;
             display: flex;
         }
-        
         nav li {
             margin-right: 50px;
         }
-        
         nav a {
             color: white;
             text-decoration: none;
         }
-        
         .slider {
             position: relative;
             width: 100%;
-            height: 100px;
+            height: 300px;
         }
-        
         .slider-container {
             position: relative;
             width: 100%;
-            height: 500%;
+            height: 100%;
         }
-        
         .slide {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 80%;
+            height: 100%;
             background-size: cover;
             background-position: center;
             transition: opacity 1s;
         }
-        .slide {
-  position: absolute;
-  top: 0;
-  right: 100%; /* Change from 0 to 100% */
-  width: 100%;
-  height: 80%;
-  background-size: cover;
-  background-position: center;
-  transition: opacity 1s, transform 1s;
-}
-
-.slider-container:hover .slide {
-  transform: translateX(0); /* Change from -100% to 0 */
-}
         .footer-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px;
             background-color: purple;
-            color: Gold;
+            color: gold;
         }
-        
         .footer-col {
-            flex-basis: 60;
+            flex-basis: 30%;
         }
-        
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-col a {
+            color: gold;
+            text-decoration: none;
+        }
+        .footer-col i {
+            margin-right: 5px;
+        }
         .copyright {
             text-align: center;
             padding: 10px;
@@ -107,7 +93,7 @@
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <img src="file:///C:/Users/Sunnykeyz/Pictures/raphat%20No%20BckG-1.png" alt="SUNNYKEYZ International Schools">
+            <img src="https://via.placeholder.com/50" alt="SUNNYKEYZ International Schools">
         </div>
         <nav>
             <ul>
@@ -118,71 +104,35 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-<h2><MARQUEE>ADMISSION! ADMISSION!! ADMISSION!!! SUNNYKEYZ INTERNATIONAL SCHOOLS, ILESA OSUN STATE. 
-Available Schools: Secondary, Primary, Chreche, Nusery</h2></MARQUEE>
+        <h2><marquee>ADMISSION! ADMISSION!! ADMISSION!!! SUNNYKEYZ INTERNATIONAL SCHOOLS, ILESA OSUN STATE. Available Schools: Secondary, Primary, Creche, Nursery</marquee></h2>
     </header>
 
-   <!-- Slider Section -->
-	<div class="slider">
-		<div class="slider-container">
-			<div class="slide" style="background-image: url('file:///C:/Users/Sunnykeyz/Pictures/U.jpg'); transform: translateX(0);">
-				<h1>Welcome to Our School</h1>
-				<p>Learn, Grow, Achieve</p>
-			</div>
-			<div class="slide" style="background-image: url('file:///C:/Users/Sunnykeyz/Pictures/R.jpg'); transform: translateX(10%);">
-				<h1>Excellence in Education</h1>
-				<p>Empowering Minds</p>
-			</div>
-			<div class="slide" style="background-image: url('file:///C:/Users/Sunnykeyz/Pictures/T.jpg'); transform: translateX(100%);">
-				<h1>Discover Your Potential</h1>
-				<p>Unlock Your Future</p>
-			</div>
-		</div>
-	</div>
+    <!-- Slider Section -->
+    <div class="slider">
+        <div class="slider-container">
+            <div class="slide" style="background-image: url('https://via.placeholder.com/800x300?text=Slide+1'); opacity: 1;">
+                <h1>Welcome to Our School</h1>
+                <p>Learn, Grow, Achieve</p>
+            </div>
+            <div class="slide" style="background-image: url('https://via.placeholder.com/800x300?text=Slide+2'); opacity: 0;">
+                <h1>Excellence in Education</h1>
+                <p>Empowering Minds</p>
+            </div>
+            <div class="slide" style="background-image: url('https://via.placeholder.com/800x300?text=Slide+3'); opacity: 0;">
+                <h1>Discover Your Potential</h1>
+                <p>Unlock Your Future</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Content Section -->
     <section style="padding: 20px;">
-        <h1>Welcome to Our Sunnykeyz International School</h1>
-        <p>Where student are achivcers whith flying colours, 
-greater achivement, Excellent in Education, Montessori System </p>
+        <h1>Welcome to Sunnykeyz International School</h1>
+        <p>Where students are achievers with flying colours, greater achievements, and excellence in education using the Montessori system.</p>
     </section>
 
     <!-- Footer Section -->
     <footer>
         <div class="footer-container">
             <div class="footer-col">
-                <h3>Contact Us</h3>
-                <p>Address: Ilesa West Seccreteriat, Oshogbo Road Ilesa, Osun State Ajimoko Town, Nigeria</p>
-                <p>Phone: +234-8102800846 </p>
-                <p>Email: <a href="mailto:info@sunnykeyz.edu">info@sunnykeyz.edu</a></p>
-            </div>
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#admissions">Admissions</a></li>
-                    <li><a href="#academics">Academics</a>
-<li><a href="#academics">Academics</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Social Media</h3>
-                <ul>
-                    <li><a href="#"><i class="fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-instagram"></i></a></li>			
-			<li><a href="#"><i class="fa fa-watsapp"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2024 Sunnykeyz Schools. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-   
-	</script>
-</body>
-</html>
+                <h
